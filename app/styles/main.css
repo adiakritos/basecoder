@@ -1,14 +1,14 @@
 html {
-  background-color: #050000;
-  background-image: url("http://www.transparenttextures.com/patterns/dark-dot.png");
+  background-color: #eee;
+  background-image: url("http://www.transparenttextures.com/patterns/cream-pixels.png");
 }
 
 * {
   font-family: 'Inconsolata', arial, georgia;
-  color: white;
+  color: black;
   font-weight: lighter;
   border-radius: 3px;
-  color: #F5F5F5;
+  color: black;
 }
 
 .group:after {
@@ -28,12 +28,26 @@ html {
 }
 
 .container {
-  width: 800px;
+  width: 1000px;
   margin: 0 auto;
 }
 
 .header {
+  margin-top: 5px;
+}
 
+.header h2 {
+  display: inline-block;
+}
+
+.ad {
+  background-color: #636363;
+  border-radius: 0px;
+}
+
+.ad-size-728x90 {
+  width: 728px;
+  height: 90px;
 }
 
 .content {
@@ -52,29 +66,26 @@ html {
   display: block;
   text-align: center;
   padding: 8px 10px;
-  background-color: #F5F5F5;
+  background-color: #000000;
   margin: 5px;
   font-size: 13px;
   transition: all 0.1s linear;
-  color: black;
+  color: #ccc;
   cursor: pointer;
 }
 
 .content .charsets li:hover {
-  background-color: #aaa;
+  background-color: #484848;
+  color: white;
 }
 
 .content .charsets li:active {
-  background-color: black;
-  color: white;
+  background-color: #828282;
+  color: black;
 }
 
 .content .charsets li:first-child {
   margin-left: 0px;
-}
-
-.footer {
-
 }
 
 form {
@@ -100,5 +111,6 @@ textarea {
   height: 150px;
   font-weight: lighter;
   padding: 10px;
-  background-color: #F5F5F5;
+  color: #fff;
+  background-color: #252525;
 }
