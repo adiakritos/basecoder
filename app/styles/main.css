@@ -43,6 +43,7 @@ html {
 .ad {
   background-color: #636363;
   border-radius: 0px;
+  display: none;
 }
 
 .ad-size-728x90 {
@@ -70,7 +71,7 @@ html {
   margin: 5px;
   font-size: 13px;
   transition: all 0.1s linear;
-  color: #ccc;
+  color: #ECECEC;
   cursor: pointer;
 }
 
