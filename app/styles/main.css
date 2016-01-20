@@ -1,5 +1,14 @@
-* {
+html {
+  background-color: #050000;
+  background-image: url("http://www.transparenttextures.com/patterns/dark-dot.png");
+}
 
+* {
+  font-family: 'Inconsolata', arial, georgia;
+  color: white;
+  font-weight: lighter;
+  border-radius: 3px;
+  color: #F5F5F5;
 }
 
 .group:after {
@@ -33,7 +42,7 @@
 
 .content ul.charsets {
   padding: 0;
-  margin: 0 0 5px;
+  margin: 10px 0;
   width: 100%;
   display: block;
 }
@@ -42,20 +51,22 @@
   float: left;
   display: block;
   text-align: center;
-  padding: 7px 10px;
-  background-color: #eee;
+  padding: 8px 10px;
+  background-color: #F5F5F5;
   margin: 5px;
-  font-size: 12px;
+  font-size: 13px;
   transition: all 0.1s linear;
+  color: black;
+  cursor: pointer;
 }
 
 .content .charsets li:hover {
-  background-color: black;
-  color: white;
+  background-color: #aaa;
 }
 
 .content .charsets li:active {
-  background-color: #aaa;
+  background-color: black;
+  color: white;
 }
 
 .content .charsets li:first-child {
@@ -71,6 +82,16 @@ form {
   width: 48%;
 }
 
+form label {
+  font-size: 19px;
+  margin-bottom: 4px;
+  display: block;
+}
+
+form label {
+  font-size: 15px;
+}
+
 textarea {
   border: 1px solid #eee;
   margin-right: 5px;
@@ -79,4 +100,5 @@ textarea {
   height: 150px;
   font-weight: lighter;
   padding: 10px;
+  background-color: #F5F5F5;
 }
