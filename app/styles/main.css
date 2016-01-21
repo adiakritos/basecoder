@@ -97,11 +97,31 @@ html {
 .formbox label {
   font-size: 19px;
   margin-bottom: 4px;
+}
+
+.formbox label:first-child {
+  font-size: 20px;
+  margin-bottom: 5px;
   display: block;
 }
 
-.formbox label {
-  font-size: 15px;
+.formbox button {
+  margin-top: 5px;
+  background-color: #CACACA;
+  border: none;
+  padding: 5px 13px;
+  font-size: 14px;
+  outline: none;
+}
+
+.formbox button:hover {
+  background-color: #909090;
+  color: white;
+}
+
+.formbox button:active {
+  background-color: #484848;
+  color: white;
 }
 
 textarea {
@@ -124,6 +144,5 @@ textarea {
   padding: 5px 15px;
   margin-left: 1px;
   color: #003A00;
-  opacity: 0;
-  transition: all 0.2s linear;
+  display: none;
 }

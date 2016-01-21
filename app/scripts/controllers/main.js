@@ -19,26 +19,20 @@ angular.module('basecoderApp')
        $scope.encoded = btoa(newVal);
      })
 
-     document.getElementById("encoded").addEventListener("focus", function() {
-       var el = $(this).siblings()[1];
-       copyToClipboard(document.getElementById("encoded"));
-       $(el).css('opacity', '1');
+     $scope.$watch('encoded', function(newVal, oldVal) {
+       $scope.human = atob(newVal);
+     })
+
+
+     $('.human').on('click', function() {
+       $('.human-note').fadeIn(200).delay(3000).fadeOut(300);
+       copyToClipboard(document.getElementById("human-textarea"));
      });
 
-     document.getElementById("encoded").addEventListener("focusout", function() {
-       var el = $(this).siblings()[1];
-       $(el).css('opacity', '0');
-     });
 
-     document.getElementById("human").addEventListener("focus", function() {
-       var el = $(this).siblings()[1];
-       copyToClipboard(document.getElementById("human"));
-       $(el).css('opacity', '1');
-     });
-
-     document.getElementById("human").addEventListener("focusout", function() {
-       var el = $(this).siblings()[1];
-       $(el).css('opacity', '0');
+     $('.encoded').on('click', function() {
+       $('.encoded-note').fadeIn(200).delay(3000).fadeOut(300);
+       copyToClipboard(document.getElementById("encoded-textarea"));
      });
 
 
