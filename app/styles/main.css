@@ -89,18 +89,18 @@ html {
   margin-left: 0px;
 }
 
-form {
+.formbox {
   display: block;
   width: 48%;
 }
 
-form label {
+.formbox label {
   font-size: 19px;
   margin-bottom: 4px;
   display: block;
 }
 
-form label {
+.formbox label {
   font-size: 15px;
 }
 

@@ -7,11 +7,21 @@
  * # MainCtrl
  * Controller of the basecoderApp
  */
+
 angular.module('basecoderApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+.controller('MainCtrl', ['$scope',
+   function ($scope) {
+
+   $scope.human   = "";
+   $scope.encoded = "";
+
+   $scope.$watch('human', function(newVal, oldVal) {
+     $scope.encoded = btoa(newVal);
+   })
+
+   $scope.$watch('encoded', function(newVal, oldVal) {
+     $scope.human = atob(newVal);
+   })
+
+  }]
+);

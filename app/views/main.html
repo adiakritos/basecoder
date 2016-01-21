@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" ng-controller="MainCtrl">
   <div class="content">
 
     <ul class="charsets group">
@@ -13,15 +13,16 @@
     </ul>
 
     <div class="forms-container group">
-      <form class="form-decoded pull-left" >
-        <label>Human Readable</label>
-        <textarea placeholder="Type or Paste your string here."></textarea>
-      </form>
 
-      <form class="form-encoded pull-right">
-        <label>Charset Encoded</label>
-        <textarea placeholder="Paste or view results here."></textarea>
-      </form>
+      <div class="formbox form-decoded pull-left" >
+        <label>Human Readable</label>
+        <textarea ng-model="human" placeholder="Type, Paste, or View results."></textarea>
+      </div>
+
+      <div class="formbox form-encoded pull-right">
+        <label>Base64 Encoded</label>
+        <textarea ng-model="encoded" placeholder="Type, Paste, or View results."></textarea>
+      </div>
     </div>
 
   </div>
