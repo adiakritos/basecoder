@@ -26,6 +26,7 @@ module.exports = function(config) {
       'bower_components/angular/angular.js',
       'bower_components/angular-animate/angular-animate.js',
       'bower_components/angular-messages/angular-messages.js',
+      'bower_components/angular-clipboard/angular-clipboard.js',
       'bower_components/angular-mocks/angular-mocks.js',
       'bower_components/html5shiv/dist/html5shiv.js',
       // endbower

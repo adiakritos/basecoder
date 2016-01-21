@@ -11,5 +11,6 @@
 
 angular.module('basecoderApp', [
     'ngAnimate',
-    'ngMessages'
+    'ngMessages',
+    'angular-clipboard'
 ]);

@@ -91,7 +91,7 @@ html {
 
 .formbox {
   display: block;
-  width: 48%;
+  width: 49%;
 }
 
 .formbox label {
@@ -114,4 +114,16 @@ textarea {
   padding: 10px;
   color: #fff;
   background-color: #252525;
+  box-sizing: border-box;
+}
+
+.copied-note {
+  background-color: #9FFF9F;
+  border: 1px solid green;
+  float: right;
+  padding: 5px 15px;
+  margin-left: 1px;
+  color: #003A00;
+  opacity: 0;
+  transition: all 0.2s linear;
 }

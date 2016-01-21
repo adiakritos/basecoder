@@ -1,27 +1,18 @@
 <div class="container" ng-controller="MainCtrl">
   <div class="content">
 
-    <ul class="charsets group">
-      <li>UTF-8</li>
-      <li>ASCII</li>
-      <li>CP1256</li>
-      <li>ISO-8859-1</li>
-      <li>ISO-8859-2</li>
-      <li>ISO-8859-6</li>
-      <li>ISO-8859-15</li>
-      <li>Windows-1252</li>
-    </ul>
-
     <div class="forms-container group">
 
       <div class="formbox form-decoded pull-left" >
         <label>Human Readable</label>
-        <textarea ng-model="human" placeholder="Type, Paste, or View results."></textarea>
+        <textarea id="human" ng-model="human" placeholder="Type, Paste, or View results."></textarea>
+        <label class="copied-note">Copied To Clipboard!</label>
       </div>
 
       <div class="formbox form-encoded pull-right">
         <label>Base64 Encoded</label>
-        <textarea ng-model="encoded" placeholder="Type, Paste, or View results."></textarea>
+        <textarea id="encoded" ng-model="encoded" placeholder="Type, Paste, or View results."></textarea>
+        <label class="copied-note">Copied To Clipboard!</label>
       </div>
     </div>
 
