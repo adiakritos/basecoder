@@ -22,15 +22,12 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       // bower:js
-      'bower_components/jquery/dist/jquery.js',
       'bower_components/angular/angular.js',
       'bower_components/angular-animate/angular-animate.js',
       'bower_components/angular-messages/angular-messages.js',
       'bower_components/angular-clipboard/angular-clipboard.js',
       'bower_components/angular-mocks/angular-mocks.js',
       'bower_components/html5shiv/dist/html5shiv.js',
-      'bower_components/firebase/firebase.js',
-      'bower_components/angularfire/dist/angularfire.js',
       // endbower
       "app/scripts/**/*.js",
       "test/mock/**/*.js",
