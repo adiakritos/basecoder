@@ -29,6 +29,8 @@ module.exports = function(config) {
       'bower_components/angular-clipboard/angular-clipboard.js',
       'bower_components/angular-mocks/angular-mocks.js',
       'bower_components/html5shiv/dist/html5shiv.js',
+      'bower_components/firebase/firebase.js',
+      'bower_components/angularfire/dist/angularfire.js',
       // endbower
       "app/scripts/**/*.js",
       "test/mock/**/*.js",

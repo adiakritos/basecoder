@@ -12,5 +12,6 @@
 angular.module('basecoderApp', [
     'ngAnimate',
     'ngMessages',
-    'angular-clipboard'
+    'angular-clipboard',
+    'firebase'
 ]);

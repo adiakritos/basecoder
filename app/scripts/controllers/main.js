@@ -9,8 +9,11 @@
  */
 
 angular.module('basecoderApp')
-.controller('MainCtrl', ['$scope', 'clipboard',
-   function ($scope, clipboard) {
+.controller('MainCtrl', ['$scope', 'clipboard', '$firebaseObject',
+   function ($scope, clipboard, $firebaseObject) {
+
+     var ref = new Firebase("https://crackling-fire-622.firebaseio.com");
+     $scope.data = $firebaseObject(ref);
 
      $scope.human   = "";
      $scope.encoded = "";
@@ -85,6 +88,7 @@ angular.module('basecoderApp')
        }
        return succeed;
      }
+
 
    }]
   );
