@@ -13,7 +13,7 @@ h1, h2 {
   font-family: 'Coustard', arial;
 }
 
-label, li, a {
+label, li, a, textarea {
   font-family: 'Arvo', arial;
 }
 
@@ -73,12 +73,13 @@ p {
 .header .site-subtitle {
   color: white;
   float: left;
-  margin: 0px;
+  margin: 7px 0 0;
   font-family: 'Catamaran';
   font-size: 20px;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=0, Color=#000000)";/*IE 8*/
-  text-shadow: 0 1px 2px #000000;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
-  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color=#000000); /*IE 5.5-7*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=0, Color=#000000)";
+  text-shadow: 0 1px 2px #000000;
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color=#000000);
+  line-height: 1;
 }
 
 .header .logo-key {
@@ -156,48 +157,13 @@ p {
   width: 49%;
 }
 
-.formbox label {
-  font-size: 19px;
-  margin-bottom: 4px;
-}
-
-.formbox label:first-child {
-  font-size: 20px;
-  margin-bottom: 5px;
-  display: block;
-}
-
-.formbox button {
-  margin: -1px 0 0 1px;
-  background-color: #CACACA;
-  border: none;
-  padding: 7px 16px;
-  font-size: 16px;
-  outline: none;
-  -webkit-border-radius: 0 0 3px 3px;/*Safari, Chrome*/
-  -moz-border-radius: 0 0 3px 3px;/*Firefox*/
-  border-radius: 0 0 3px 3px;
-}
-
-.formbox button:hover {
-  background-color: #ABAAAA;
-}
-
-.formbox button:active {
-  background-color: #A2A2A2;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=0, Color=#000000)";/*IE 8*/
-  -moz-box-shadow: 0 1px 1px 1px rgba(0,0,0,0.2) inset;/*FF 3.5+*/
-  -webkit-box-shadow: 0 1px 1px 1px rgba(0,0,0,0.2) inset;/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
-  box-shadow: 0 1px 1px 1px rgba(0,0,0,0.2) inset;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
-  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=135, Color=#000000); /*IE 5.5-7*/
-}
-
 textarea {
   border: 1px solid #eee;
   margin-right: 5px;
   display: block;
+  font-size: 20px;
   width: 100%;
-  height: 150px;
+  height: 200px;
   border: none;
   font-weight: lighter;
   padding: 10px;
@@ -207,11 +173,20 @@ textarea {
   -webkit-border-radius: 3px 3px 0 0;/*Safari, Chrome*/
   -moz-border-radius: 3px 3px 0 0;/*Firefox*/
   border-radius: 3px 3px 0 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=0, Color=#000000)";/*IE 8*/
-  -moz-box-shadow: 0 1px 1px 1px rgba(0,0,0,0.3) inset;/*FF 3.5+*/
-  -webkit-box-shadow: 0 1px 1px 1px rgba(0,0,0,0.3) inset;/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
-  box-shadow: 0 1px 1px 1px rgba(0,0,0,0.3) inset;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
-  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=135, Color=#000000); /*IE 5.5-7*/
+  border: 2px solid #929292;
+  border-bottom: none;
+}
+
+button {
+  width: 100%;
+  border: 2px solid #929292;
+  border-top: none;
+  -webkit-border-radius: 0 0 3px 3px;/*Safari, Chrome*/
+  -moz-border-radius: 0 0 3px 3px;/*Firefox*/
+  border-radius: 0 0 3px 3px;
+  font-family: 'Coustard';
+  padding: 10px;
+  background-color: #E8E8E8;
 }
 
 .copied-note {
