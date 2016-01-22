@@ -1,21 +1,33 @@
 html {
-  background-color: #F9FFC4;
+  background-color: #F9F9F9;
 }
 
 * {
-  font-family: 'Inconsolata', arial, georgia;
   color: black;
   font-weight: lighter;
   border-radius: 3px;
   color: black;
 }
 
+h1, h2 {
+  font-family: 'Coustard', arial;
+}
+
+label, li, a {
+  font-family: 'Arvo', arial;
+}
+
+p {
+  font-family: 'Arimo', arial;
+}
+
+
 .group:after {
-   content: ".";
-   visibility: hidden;
-   display: block;
-   height: 0;
-   clear: both;
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
 }
 
 .pull-left {
@@ -32,21 +44,59 @@ html {
 }
 
 .header {
-  margin-top: 5px;
+  padding: 60px 0;
+  background-color: #bd0060;
+  background-image: url("/images/light-wool.png");
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=8, Direction=0, Color=#000000)";/*IE 8*/
+  -moz-box-shadow: 0 -1px 8px 1px rgba(0,0,0,0.2) inset;/*FF 3.5+*/
+  -webkit-box-shadow: 0 -1px 8px 1px rgba(0,0,0,0.2) inset;/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+  box-shadow: 0 -1px 8px 1px rgba(0,0,0,0.2) inset;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=8, Direction=135, Color=#000000); /*IE 5.5-7*/
 }
 
 .header .logo-side {
   float: left;
-  width: 200px;
+  width: 280px;
 }
 
 .header .site-title {
-
-  margin-bottom: 0px;
+  font-family: 'Coustard', arial;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  line-height: .9;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=0, Color=#000000)";/*IE 8*/
+  text-shadow: 0 1px 2px #000000;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color=#000000); /*IE 5.5-7*/
 }
 
 .header .site-subtitle {
-  margin-top: 5px;
+  color: white;
+  float: left;
+  margin: 0px;
+  font-family: 'Catamaran';
+  font-size: 20px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=0, Color=#000000)";/*IE 8*/
+  text-shadow: 0 1px 2px #000000;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color=#000000); /*IE 5.5-7*/
+}
+
+.header .logo-key {
+  float: left;
+  width: 33px;
+  margin-right: 5px;
+}
+
+.logo-container {
+  float: left;
+}
+
+.text-container {
+  float: left;
+}
+
+.ad-container {
+  display: none;
 }
 
 .ad {
