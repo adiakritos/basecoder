@@ -18,6 +18,13 @@
     <link href='https://fonts.googleapis.com/css?family=Arimo:400,700,400italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Catamaran:400,300,100' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Coustard:400,900' rel='stylesheet' type='text/css'>
+
+    <meta property="og:url"           content="http://basewiz.com" />
+    <meta property="og:type"          content="Basewiz" />
+    <meta property="og:title"         content="The Instant Base64 Converter" />
+    <meta property="og:description"   content="Encode UTF-8 Text to Base64" />
+    <meta property="og:image"         content="http://www.basewiz.com/images/base64converter.png" />
+
     <!--[if lt IE 9]>
       <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
     <![endif]-->
@@ -58,8 +65,9 @@
         </div>
       </div>
 
-      <div class="container">
-        <p>This converts regular text (UTF-8 charset) to Base64.</p>
+      <div class="container group">
+        <p class="pull-left">This converts regular text (UTF-8 charset) to Base64.</p>
+        <div class="addthis_sharing_toolbox"></div>
       </div>
 
       <div ng-include="'views/main.html'"></div>
@@ -101,5 +109,7 @@
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/main.js"></script>
     <!-- endbuild -->
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56a1bda3709124e1" async="async"></script>
   </body>
 </html>
